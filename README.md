@@ -59,7 +59,7 @@ Este repositorio contiene las tareas y proyectos desarrollados durante el curso 
 **Tema:** Información académica de cursos de Ingeniería en Sistemas  
 **Tecnologías:** HTML5 puro (sin CSS externo)  
 **Estado:** ✅ Completado  
-**Deploy:** 🌐 [Sitio en Netlify](https://cursos-finalizados-chic.netlify.app)  
+**Deploy:** 🌐 [Sitio en Netlify](https://tarea1alexanderchicumg.netlify.app)  
 **Descripción:** Sitio web informativo con 5 páginas que detalla cursos finalizados:
 - 💻 **Programación I** - Fundamentos de programación y algoritmos
 - 🗄️ **Bases de Datos** - Sistemas de gestión y SQL avanzado

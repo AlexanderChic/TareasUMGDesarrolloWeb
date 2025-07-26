@@ -15,7 +15,7 @@ Este repositorio contiene un sitio web informativo desarrollado únicamente con 
 
 ## 🌐 Enlace del Sitio Web Publicado
 
-**URL:** [Pendiente - Se actualizará con el enlace de Netlify]
+**URL:** [https://tarea1alexanderchicumg.netlify.app/]
 
 *Nota: Este enlace se actualizará una vez que el sitio sea desplegado en Netlify*
 
