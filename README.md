@@ -24,7 +24,7 @@ Este repositorio contiene las tareas y proyectos desarrollados durante el curso 
 │   ├── 🎨 styles.css              # Estilos CSS
 │   ├── 🖼️ imagenes/               # Galería de imágenes
 │   └── 📖 README.md               # Documentación del proyecto
-├── 📂 Hoja de trabajo 2/          # Sitio web de cursos finalizados
+├── 📂 Tarea 1/                    # Sitio web de cursos finalizados
 │   ├── 📄 index.html              # Página principal
 │   ├── 📄 programacion.html       # Curso de Programación I
 │   ├── 📄 bases-datos.html        # Curso de Bases de Datos
@@ -32,7 +32,7 @@ Este repositorio contiene las tareas y proyectos desarrollados durante el curso 
 │   ├── 📄 redes.html              # Curso de Redes de Computadoras
 │   ├── 🌐 Deploy en Netlify       # Sitio web publicado
 │   └── 📖 README.md               # Documentación del proyecto
-├── 📂 Hoja de trabajo 3/          # Próximo proyecto
+├── 📂 Próximas tareas/            # Futuras asignaciones
 ├── 📂 Proyecto Final/             # Proyecto final del curso
 └── 📖 README.md                   # Este archivo
 ```
@@ -74,12 +74,12 @@ Este repositorio contiene las tareas y proyectos desarrollados durante el curso 
 - ✅ Ejemplos de código con syntax highlighting
 - ✅ Publicado en Netlify con repositorio GitHub
 
-### 📂 Hoja de Trabajo 3
-**Estado:** 🔄 Pendiente  
-**Descripción:** Próximo proyecto del curso
+### 📂 Próximas Asignaciones
+**Estado:** ⏳ Pendiente de asignación por el profesor  
+**Descripción:** Futuras tareas y proyectos del curso
 
 ### 📂 Proyecto Final
-**Estado:** 🔄 Pendiente  
+**Estado:** ⏳ Pendiente  
 **Descripción:** Proyecto integral final del curso
 
 ## 🛠️ Tecnologías Utilizadas
@@ -90,23 +90,18 @@ Este repositorio contiene las tareas y proyectos desarrollados durante el curso 
 - ![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white)
 - ![Netlify](https://img.shields.io/badge/Netlify-00C7B7?style=flat&logo=netlify&logoColor=white)
 
-### Por Implementar
-- ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
-- ![React](https://img.shields.io/badge/React-61DAFB?style=flat&logo=react&logoColor=black)
-- ![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat&logo=node.js&logoColor=white)
-
 ## 📊 Progreso del Curso
 
 | Proyecto | Estado | Tecnologías | Calificación |
 |----------|--------|-------------|--------------|
 | Hoja de Trabajo 1 | ✅ Completado | HTML5, CSS3 | Pendiente |
 | Tarea 1 | ✅ Completado | HTML5 puro | Pendiente |
-| Hoja de Trabajo 3 | Pendiente de asignarse | TBD | Pendiente |
+| Próximas asignaciones | ⏳ Pendiente de asignación | TBD | Pendiente |
 | Proyecto Final | ⏳ Pendiente | TBD | Pendiente |
 
 ## 🔗 Enlaces Importantes
 
-- 🌐 **Hoja de Trabajo 2 - Deploy:** [https://cursos-finalizados-chic.netlify.app](https://cursos-finalizados-chic.netlify.app)
+- 🌐 **Tarea 1 - Deploy:** [https://cursos-finalizados-chic.netlify.app](https://cursos-finalizados-chic.netlify.app)
 - 📚 **Repositorio GitHub:** [Enlace del repositorio]
 - 👨‍🏫 **Plataforma del Curso:** [Enlace a aula virtual]
 
@@ -120,10 +115,10 @@ Este repositorio contiene las tareas y proyectos desarrollados durante el curso 
 - ✅ Documentación efectiva con README.md
 
 ### Próximos Objetivos
-- 🎯 Implementar JavaScript para interactividad
-- 🎯 Trabajar con APIs y datos dinámicos
-- 🎯 Desarrollar aplicaciones web con frameworks modernos
-- 🎯 Optimizar rendimiento y accesibilidad
+- 🎯 Completar las siguientes asignaciones del curso
+- 🎯 Aplicar las tecnologías que el profesor indique
+- 🎯 Desarrollar el proyecto final del curso
+- 🎯 Mantener buenas prácticas de desarrollo
 
 ## 📞 Contacto
 
