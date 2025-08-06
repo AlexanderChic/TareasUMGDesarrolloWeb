@@ -17,8 +17,6 @@ Este repositorio contiene un sitio web informativo desarrollado únicamente con 
 
 **URL:** [https://tarea1alexanderchicumg.netlify.app/]
 
-*Nota: Este enlace se actualizará una vez que el sitio sea desplegado en Netlify*
-
 ## 📁 Estructura del Proyecto
 
 ```
@@ -78,20 +76,7 @@ sitio-web-cursos/
 - ✅ **Diseño Atractivo** - Uso de colores y elementos visuales
 - ✅ **Información Académica** - Contenido educativo relevante
 
-## 🚀 Instrucciones de Despliegue
 
-### Netlify
-1. Crear cuenta en [Netlify](https://www.netlify.com)
-2. Conectar repositorio de GitHub
-3. Configurar build settings (ninguno necesario para HTML puro)
-4. Deploy automático desde main branch
-
-### GitHub Pages (Alternativo)
-1. Ir a Settings del repositorio
-2. Seleccionar Pages en el menú lateral
-3. Source: Deploy from a branch
-4. Branch: main / (root)
-5. Save
 
 ## 📖 Cómo Navegar el Sitio
 
@@ -112,16 +97,7 @@ sitio-web-cursos/
    - Enlaces directos entre cursos
    - Botón de regreso al inicio
 
-## 🎯 Objetivos Cumplidos
 
-- ✅ 5 páginas HTML (1 principal + 4 cursos)
-- ✅ Información detallada de cada curso
-- ✅ Tablas y contenido estructurado
-- ✅ Diseño atractivo sin CSS externo
-- ✅ Navegación funcional
-- ✅ Footer con datos del estudiante
-- ✅ Repositorio en GitHub configurado
-- ✅ Listo para publicación en Netlify
 
 
 ## 📞 GRUPO
