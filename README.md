@@ -9,7 +9,7 @@
 
 ---
 
-![VISITA LA PAGINA](https://hojadetrabajodos.netlify.app/)
+VISITA LA PAGINA:(https://hojadetrabajodos.netlify.app/)
 
 ## 📋 Descripción del Proyecto
 
