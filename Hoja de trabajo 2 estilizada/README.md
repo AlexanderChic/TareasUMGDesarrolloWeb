@@ -1,6 +1,6 @@
 # 🏛️ Excursión a Antigua Guatemala
 
-PAGINA estiliza en netlify: https://github.com/AlexanderChic/TareasUMGDesarrolloWeb
+PAGINA estiliza en netlify: hhttps://hojadetrabajodos.netlify.app/
 ## 👨‍🎓 Información del Estudiante
 
 **Nombre:** Francisco Alexander Chic Barrios  
