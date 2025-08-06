@@ -20,18 +20,7 @@ Este repositorio contiene las tareas y proyectos desarrollados durante el curso 
 ```
 📦 Repositorio Principal
 ├── 📂 Hoja de trabajo 1/          # Página web turística - Antigua Guatemala
-│   ├── 📄 index.html              # Estructura principal HTML
-│   ├── 🎨 styles.css              # Estilos CSS
-│   ├── 🖼️ imagenes/               # Galería de imágenes
-│   └── 📖 README.md               # Documentación del proyecto
 ├── 📂 Tarea 1/                    # Sitio web de cursos finalizados
-│   ├── 📄 index.html              # Página principal
-│   ├── 📄 programacion.html       # Curso de Programación I
-│   ├── 📄 bases-datos.html        # Curso de Bases de Datos
-│   ├── 📄 estructuras.html        # Curso de Estructuras de Datos
-│   ├── 📄 redes.html              # Curso de Redes de Computadoras
-│   ├── 🌐 Deploy en Netlify       # Sitio web publicado
-│   └── 📖 README.md               # Documentación del proyecto
 ├── 📂 Próximas tareas/            # Futuras asignaciones
 ├── 📂 Proyecto Final/             # Proyecto final del curso
 └── 📖 README.md                   # Este archivo
