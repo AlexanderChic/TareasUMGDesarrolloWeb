@@ -1,5 +1,6 @@
 # 🏛️ Excursión a Antigua Guatemala
 
+PAGINA estiliza en netlify: https://github.com/AlexanderChic/TareasUMGDesarrolloWeb
 ## 👨‍🎓 Información del Estudiante
 
 **Nombre:** Francisco Alexander Chic Barrios  
@@ -28,7 +29,7 @@ Sitio web turístico sobre **Antigua Guatemala**, Patrimonio de la Humanidad dec
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)
 ![Font Awesome](https://img.shields.io/badge/Font_Awesome-339AF0?style=flat&logo=fontawesome&logoColor=white)
 
-![PAGINA estiliza en netlify](https://github.com/AlexanderChic/TareasUMGDesarrolloWeb)
+
 ## 📁 Estructura del Proyecto
 
 ```
