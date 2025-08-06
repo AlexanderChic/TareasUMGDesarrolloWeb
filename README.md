@@ -13,44 +13,26 @@
 
 ## 📋 Descripción
 
-Este repositorio contiene las tareas y proyectos desarrollados durante el curso de **Desarrollo Web** en la Universidad Mariano Gálvez de Guatemala. Con una rama para la estilizar la hoja de trabajo 1, igual se publicaron aqui los cambios para tenerlos en ambas ramas para llevar un mejor control de la documentación
+Este repositorio contiene las tareas y proyectos desarrollados durante el curso de **Desarrollo Web** en la Universidad Mariano Gálvez de Guatemala. Con una rama para la estilizar la hoja de trabajo 1, otra rama para el boostrap,  igual se publicaron aqui los cambios para tenerlos en ambas ramas para llevar un mejor control de la documentación
 
 ## 📁 Estructura del Repositorio
 
 ```
-📦 Repositorio Principal
+📦 Repositorio inicial
 ├── 📂 Hoja de trabajo 1/          # Página web turística - Antigua Guatemala
 ├── 📂 Tarea 1/                    # Sitio web de cursos finalizados
 ├── 📂 Próximas tareas/            # Futuras asignaciones
 ├── 📂 Proyecto Final/             # Proyecto final del curso
 └── 📖 README.md                   # Este archivo
 ```
-
-## 🎯 Objetivos del Curso
-
-- Desarrollar habilidades en **HTML5** y **CSS3**
-- Crear páginas web responsivas y funcionales
-- Implementar **JavaScript** para interactividad
-- Trabajar con **frameworks modernos** (React, Angular)
-- Implementar mejores prácticas en desarrollo web
-- Trabajar con estructuras de archivos organizadas
-- Desarrollo de aplicaciones web completas
-
 ## 📝 Proyectos Desarrollados
+### 📂 Hoja de Trabajo 3 - Página Web Turística BOOSTRAP ✅
 ### 📂 Hoja de Trabajo 2 - Página Web Turística estilizada ✅
 ### 📂 Hoja de Trabajo 1 - Página Web Turística ✅
 
 
 ### 📂 Tarea 1 - Sitio de Cursos Finalizados ✅
 
-
-**Características del proyecto:**
-- ✅ Solo HTML puro con estilos inline
-- ✅ Diseño responsive usando tablas HTML
-- ✅ Navegación funcional entre páginas
-- ✅ Contenido académico detallado con tablas informativas
-- ✅ Ejemplos de código con syntax highlighting
-- ✅ Publicado en Netlify con repositorio GitHub
 
 
 
@@ -64,7 +46,7 @@ Este repositorio contiene las tareas y proyectos desarrollados durante el curso 
 
 
 ## 🔗 Enlaces Importantes
-
+- 🌐 **Hoja de trabajo 3 - Deploy:** [https://antiguaguatemalabootstrap.netlify.app/](https://antiguaguatemalabootstrap.netlify.app/)
 - 🌐 **Hoja de trabajo 2 - Deploy:** [https://hojadetrabajodos.netlify.app](https://hojadetrabajodos.netlify.app/)
 - 🌐 **Tarea 1 - Deploy:** [https://cursos-finalizados-chic.netlify.app](https://cursos-finalizados-chic.netlify.app)
 
