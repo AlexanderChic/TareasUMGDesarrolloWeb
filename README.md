@@ -13,25 +13,14 @@
 
 ## 📋 Descripción
 
-Este repositorio contiene las tareas y proyectos desarrollados durante el curso de **Desarrollo Web** en la Universidad Mariano Gálvez de Guatemala.
+Este repositorio contiene las tareas y proyectos desarrollados durante el curso de **Desarrollo Web** en la Universidad Mariano Gálvez de Guatemala. Con una rama para la estilizar la hoja de trabajo 1, igual se publicaron aqui los cambios para tenerlos en ambas ramas para llevar un mejor control de la documentación
 
 ## 📁 Estructura del Repositorio
 
 ```
 📦 Repositorio Principal
 ├── 📂 Hoja de trabajo 1/          # Página web turística - Antigua Guatemala
-│   ├── 📄 index.html              # Estructura principal HTML
-│   ├── 🎨 styles.css              # Estilos CSS
-│   ├── 🖼️ imagenes/               # Galería de imágenes
-│   └── 📖 README.md               # Documentación del proyecto
 ├── 📂 Tarea 1/                    # Sitio web de cursos finalizados
-│   ├── 📄 index.html              # Página principal
-│   ├── 📄 programacion.html       # Curso de Programación I
-│   ├── 📄 bases-datos.html        # Curso de Bases de Datos
-│   ├── 📄 estructuras.html        # Curso de Estructuras de Datos
-│   ├── 📄 redes.html              # Curso de Redes de Computadoras
-│   ├── 🌐 Deploy en Netlify       # Sitio web publicado
-│   └── 📖 README.md               # Documentación del proyecto
 ├── 📂 Próximas tareas/            # Futuras asignaciones
 ├── 📂 Proyecto Final/             # Proyecto final del curso
 └── 📖 README.md                   # Este archivo
@@ -48,23 +37,12 @@ Este repositorio contiene las tareas y proyectos desarrollados durante el curso 
 - Desarrollo de aplicaciones web completas
 
 ## 📝 Proyectos Desarrollados
+### 📂 Hoja de Trabajo 2 - Página Web Turística estilizada ✅
+### 📂 Hoja de Trabajo 1 - Página Web Turística ✅
 
-### 📂 Hoja de Trabajo 1 - Página Web Turística
-**Tema:** Antigua Guatemala  
-**Tecnologías:** HTML5, CSS3  
-**Estado:** ✅ Completado  
-**Descripción:** Sitio web promocional sobre los atractivos turísticos de Antigua Guatemala, incluyendo galería de imágenes y información detallada de sitios históricos.
 
-### 📂 Tarea 1 - Sitio de Cursos Finalizados
-**Tema:** Información académica de cursos de Ingeniería en Sistemas  
-**Tecnologías:** HTML5 puro (sin CSS externo)  
-**Estado:** ✅ Completado  
-**Deploy:** 🌐 [Sitio en Netlify](https://tarea1alexanderchicumg.netlify.app)  
-**Descripción:** Sitio web informativo con 5 páginas que detalla cursos finalizados:
-- 💻 **Programación I** - Fundamentos de programación y algoritmos
-- 🗄️ **Bases de Datos** - Sistemas de gestión y SQL avanzado
-- 🔗 **Estructuras de Datos** - Algoritmos y análisis de complejidad
-- 🌐 **Redes de Computadoras** - Protocolos y arquitecturas de red
+### 📂 Tarea 1 - Sitio de Cursos Finalizados ✅
+
 
 **Características del proyecto:**
 - ✅ Solo HTML puro con estilos inline
@@ -74,13 +52,7 @@ Este repositorio contiene las tareas y proyectos desarrollados durante el curso 
 - ✅ Ejemplos de código con syntax highlighting
 - ✅ Publicado en Netlify con repositorio GitHub
 
-### 📂 Próximas Asignaciones
-**Estado:** ⏳ Pendiente de asignación por el profesor  
-**Descripción:** Futuras tareas y proyectos del curso
 
-### 📂 Proyecto Final
-**Estado:** ⏳ Pendiente  
-**Descripción:** Proyecto integral final del curso
 
 ## 🛠️ Tecnologías Utilizadas
 
@@ -90,20 +62,14 @@ Este repositorio contiene las tareas y proyectos desarrollados durante el curso 
 - ![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white)
 - ![Netlify](https://img.shields.io/badge/Netlify-00C7B7?style=flat&logo=netlify&logoColor=white)
 
-## 📊 Progreso del Curso
-
-| Proyecto | Estado | Tecnologías | Calificación |
-|----------|--------|-------------|--------------|
-| Hoja de Trabajo 1 | ✅ Completado | HTML5, CSS3 | Pendiente |
-| Tarea 1 | ✅ Completado | HTML5 puro | Pendiente |
-| Próximas asignaciones | ⏳ Pendiente de asignación | TBD | Pendiente |
-| Proyecto Final | ⏳ Pendiente | TBD | Pendiente |
 
 ## 🔗 Enlaces Importantes
 
+- 🌐 **Hoja de trabajo 2 - Deploy:** [https://hojadetrabajodos.netlify.app](https://hojadetrabajodos.netlify.app/)
 - 🌐 **Tarea 1 - Deploy:** [https://cursos-finalizados-chic.netlify.app](https://cursos-finalizados-chic.netlify.app)
-- 📚 **Repositorio GitHub:** [Enlace del repositorio]
-- 👨‍🏫 **Plataforma del Curso:** [Enlace a aula virtual]
+
+- 📚 **Repositorio GitHub:** [https://github.com/AlexanderChic/TareasUMGDesarrolloWeb]
+
 
 ## 📝 Notas de Desarrollo
 

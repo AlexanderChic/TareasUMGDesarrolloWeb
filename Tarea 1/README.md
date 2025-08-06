@@ -124,7 +124,7 @@ sitio-web-cursos/
 - ✅ Listo para publicación en Netlify
 
 
-## 📞 Contacto
+## 📞 GRUPO
 
 **Francisco Alexander Chic Barrios**  
 🎓 Universidad Mariano Gálvez de Guatemala  
