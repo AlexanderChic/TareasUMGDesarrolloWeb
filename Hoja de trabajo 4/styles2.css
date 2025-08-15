@@ -1,0 +1,33 @@
+/* Elimina márgenes y paddings por defecto del body */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Asegura que la navbar no tenga borde */
+.navbar {
+    border: none;
+}
+
+/* Quitar márgenes/paddings por defecto */
+html, body {
+    height: 100%; /* necesario para que flex funcione */
+    margin: 0;
+    padding: 0;
+}
+
+/* Contenedor principal que ocupa toda la pantalla */
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Contenido principal que crece si es necesario */
+.container {
+    flex: 1; /* hace que el contenido ocupe el espacio disponible */
+}
+
+/* Opcional: si quieres que navbar quede pegado al top y sin línea */
+.navbar {
+    border: none;
+}

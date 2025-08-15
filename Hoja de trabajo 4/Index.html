@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atracciones - Antigua Guatemala</title>
+    <meta name="description" content="Descubre las principales atracciones turísticas de Antigua Guatemala. Sitios históricos y actividades únicas.">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar Bootstrap -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="fas fa-mountain text-warning"></i>
+                Antigua Guatemala
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">
+                            <i class="fas fa-home"></i> Inicio
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="atracciones.html">
+                            <i class="fas fa-camera"></i> Atracciones
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="alojamiento.html">
+                            <i class="fas fa-bed"></i> Alojamiento
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="bg-primary text-white py-5 mt-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1 class="display-4 fw-bold">
+                        <i class="fas fa-camera"></i>
+                        Atracciones Turísticas
+                    </h1>
+                    <p class="lead">Descubre los lugares más emblemáticos de Antigua Guatemala</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galería Principal con Carousel -->
+<section class="py-5">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="text-primary fw-bold">Galería de Lugares Emblemáticos</h2>
+            <p class="text-muted">Los sitios más fotografiados y visitados</p>
+        </div>
+        
+        <div id="galleryCarousel" class="carousel slide shadow rounded" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="3"></button>
+            </div>
+            
+            <div class="carousel-inner rounded">
+                <div class="carousel-item active">
+                    <img src="images/Arco antigua.jpg" class="d-block w-100" style="height: 500px; object-fit: cover;" alt="Arco de Santa Catalina">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>Arco de Santa Catalina</h3>
+                        <p>Símbolo icónico de Antigua Guatemala, construido en el siglo XVII</p>
+                        <button class="btn btn-light" data-bs-toggle="modal" data-bs-target="#arcoModal">
+                            Ver Detalles
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="carousel-item">
+                    <img src="images/Iglesia la merced.jpg" class="d-block w-100" style="height: 500px; object-fit: cover;" alt="Iglesia de La Merced">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>Iglesia de La Merced</h3>
+                        <p>Magnífico ejemplo de arquitectura barroca colonial</p>
+                        <button class="btn btn-light" data-bs-toggle="modal" data-bs-target="#mercedModal">
+                            Ver Detalles
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="carousel-item">
+                    <img src="images/parquecentral.png" class="d-block w-100" style="height: 500px; object-fit: cover;" alt="Parque Central">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>Parque Central</h3>
+                        <p>Corazón social y cultural de la ciudad colonial</p>
+                        <button class="btn btn-light" data-bs-toggle="modal" data-bs-target="#parqueModal">
+                            Ver Detalles
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="carousel-item">
+                    <img src="images/Volcan.jpg" class="d-block w-100" style="height: 500px; object-fit: cover;" alt="Volcán de Agua">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>Volcán de Agua</h3>
+                        <p>Vista panorámica espectacular de la región</p>
+                        <button class="btn btn-light" data-bs-toggle="modal" data-bs-target="#volcanModal">
+                            Ver Detalles
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <button class="carousel-control-prev" type="button" data-bs-target="#galleryCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#galleryCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+</section>
+
+<!-- Itinerarios de Actividades -->
+<section class="container my-5">
+    <h3 class="mb-4">Itinerarios de Actividades</h3>
+
+    <!-- Botones para cambiar de tabla -->
+    <div class="mb-3">
+        <button class="btn btn-primary me-2" onclick="mostrarItinerario('playa')">Itinerario de Playa</button>
+        <button class="btn btn-success me-2" onclick="mostrarItinerario('montana')">Itinerario de Montaña</button>
+        <button class="btn btn-warning" onclick="mostrarItinerario('cultural')">Itinerario Cultural</button>
+    </div>
+
+    <!-- Tabla Playa -->
+    <table id="tabla-playa" class="table table-bordered table-striped">
+        <thead class="table-primary">
+            <tr>
+                <th>Hora</th>
+                <th>Actividad</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>08:00</td><td>Salida hacia la playa</td></tr>
+            <tr><td>09:30</td><td>Desayuno frente al mar</td></tr>
+            <tr><td>11:00</td><td>Natación y juegos acuáticos</td></tr>
+            <tr><td>14:00</td><td>Tour en lancha</td></tr>
+        </tbody>
+    </table>
+
+    <!-- Tabla Montaña -->
+    <table id="tabla-montana" class="table table-bordered table-striped" style="display:none;">
+        <thead class="table-success">
+            <tr>
+                <th>Hora</th>
+                <th>Actividad</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>07:00</td><td>Salida hacia la montaña</td></tr>
+            <tr><td>08:30</td><td>Caminata guiada</td></tr>
+            <tr><td>11:00</td><td>Picnic en mirador</td></tr>
+            <tr><td>13:00</td><td>Exploración de cuevas</td></tr>
+        </tbody>
+    </table>
+
+    <!-- Tabla Cultural -->
+    <table id="tabla-cultural" class="table table-bordered table-striped" style="display:none;">
+        <thead class="table-warning">
+            <tr>
+                <th>Hora</th>
+                <th>Actividad</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>09:00</td><td>Visita a museo histórico</td></tr>
+            <tr><td>11:00</td><td>Taller de artesanía</td></tr>
+            <tr><td>13:00</td><td>Almuerzo típico</td></tr>
+            <tr><td>15:00</td><td>Recorrido por el centro histórico</td></tr>
+        </tbody>
+    </table>
+</section>
+
+
+
+    <!-- Lista de Actividades con Tabs -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="text-primary fw-bold">Actividades y Experiencias</h2>
+                <p class="text-muted">Vive experiencias únicas en cada rincón de la ciudad</p>
+            </div>
+            
+            <!-- Tabs de Categorías -->
+            <ul class="nav nav-pills nav-justified mb-4" id="activityTabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="cultural-tab" data-bs-toggle="pill" data-bs-target="#cultural" type="button" role="tab">
+                        <i class="fas fa-church"></i>
+                        Cultural
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="aventura-tab" data-bs-toggle="pill" data-bs-target="#aventura" type="button" role="tab">
+                        <i class="fas fa-mountain"></i>
+                        Aventura
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="gastronomia-tab" data-bs-toggle="pill" data-bs-target="#gastronomia" type="button" role="tab">
+                        <i class="fas fa-utensils"></i>
+                        Gastronomía
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="compras-tab" data-bs-toggle="pill" data-bs-target="#compras" type="button" role="tab">
+                        <i class="fas fa-shopping-bag"></i>
+                        Compras
+                    </button>
+                </li>
+            </ul>
+            
+            <div class="tab-content" id="activityTabContent">
+                <!-- Actividades Culturales -->
+                <div class="tab-pane fade show active" id="cultural" role="tabpanel">
+                    <div class="row g-4">
+                        <div class="col-lg-3 col-md-6">
+                            <div class="card h-100 shadow-sm">
+                                <div class="card-body text-center">
+                                    <div class="bg-primary text-white rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 80px; height: 80px;">
+                                        <i class="fas fa-archway fs-2"></i>
+                                    </div>
+                                    <h5 class="card-title text-primary">Arco de Santa Catalina</h5>
+                                    <p class="card-text">Recorrido por el símbolo más icónico de la ciudad</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="card h-100 shadow-sm">
+                                <div class="card-body text-center">
+                                    <div class="bg-primary text-white rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 80px; height: 80px;">
+                                        <i class="fas fa-church fs-2"></i>
+                                    </div>
+                                    <h5 class="card-title text-primary">Iglesia de La Merced</h5>
+                                    <p class="card-text">Visita guiada por esta joya arquitectónica</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="card h-100 shadow-sm">
+                                <div class="card-body text-center">
+                                    <div class="bg-primary text-white rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 80px; height: 80px;">
+                                        <i class="fas fa-gem fs-2"></i>
+                                    </div>
+                                    <h5 class="card-title text-primary">Museo de Jade</h5>
+                                    <p class="card-text">Descubre la historia del jade guatemalteco</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="card h-100 shadow-sm">
+                                <div class="card-body text-center">
+                                    <div class="bg-primary text-white rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 80px; height: 80px;">
+                                        <i class="fas fa-building fs-2"></i>
+                                    </div>
+                                    <h5 class="card-title text-primary">Arquitectura Colonial</h5>
+                                    <p class="card-text">Observación de la arquitectura histórica</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Actividades de Aventura -->
+                <div class="tab-pane fade" id="aventura" role="tabpanel">
+                    <div class="row g-4">
+                        <div class="col-lg-3 col-md-6">
+                            <div class="card h-100 shadow-sm">
+                                <div class="card-body text-center">
+                                    <div class="bg-success text-white rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 80px; height: 80px;">
+                                        <i class="fas fa-mountain fs-2"></i>
+                                    </div>
+                                    <h5 class="card-title text-success">Cerro de la Cruz</h5>
+                                    <p class="card-text">Caminata con vista panorámica de la ciudad</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="card h-100 shadow-sm">
+                                <div class="card-body text-center">
+                                    <div class="bg-success text-white rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 80px; height: 80px;">
+                                        <i class="fas fa-hiking fs-2"></i>
+                                    </div>
+                                    <h5 class="card-title text-success">Volcán de Agua</h5>
+                                    <p class="card-text">Excursión de senderismo al volcán</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="card h-100 shadow-sm">
+                                <div class="card-body text-center">
+                                    <div class="bg-success text-white rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 80px; height: 80px;">
+                                        <i class="fas fa-camera fs-2"></i>
+                                    </div>
+                                    <h5 class="card-title text-success">Fotografía Colonial</h5>
+                                    <p class="card-text">Sesión fotográfica en calles empedradas</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="card h-100 shadow-sm">
+                                <div class="card-body text-center">
+                                    <div class="bg-success text-white rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 80px; height: 80px;">
+                                        <i class="fas fa-moon fs-2"></i>
+                                    </div>
+                                    <h5 class="card-title text-success">Tour Nocturno</h5>
+                                    <p class="card-text">Recorrido por las ruinas iluminadas</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Gastronomía -->
+                <div class="tab-pane fade" id="gastronomia" role="tabpanel">
+                    <div class="row g-4">
+                        <div class="col-lg-3 col-md-6">
+                            <div class="card h-100 shadow-sm">
+                                <div class="card-body text-center">
+                                    <div class="bg-warning text-dark rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 80px; height: 80px;">
+                                        <i class="fas fa-coffee fs-2"></i>
+                                    </div>
+                                    <h5 class="card-title text-warning">Tour de Cafeterías</h5>
+                                    <p class="card-text">Degustación del mejor café guatemalteco</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="card h-100 shadow-sm">
+                                <div class="card-body text-center">
+                                    <div class="bg-warning text-dark rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 80px; height: 80px;">
+                                        <i class="fas fa-candy-cane fs-2"></i>
+                                    </div>
+                                    <h5 class="card-title text-warning">Dulces Típicos</h5>
+                                    <p class="card-text">Degustación de postres tradicionales</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="card h-100 shadow-sm">
+                                <div class="card-body text-center">
+                                    <div class="bg-warning text-dark rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 80px; height: 80px;">
+                                        <i class="fas fa-utensils fs-2"></i>
+                                    </div>
+                                    <h5 class="card-title text-warning">Cocina Local</h5>
+                                    <p class="card-text">Experiencia gastronómica guatemalteca</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="card h-100 shadow-sm">
+                                <div class="card-body text-center">
+                                    <div class="bg-warning text-dark rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 80px; height: 80px;">
+                                        <i class="fas fa-wine-glass fs-2"></i>
+                                    </div>
+                                    <h5 class="card-title text-warning">Bebidas Tradicionales</h5>
+                                    <p class="card-text">Descubre sabores únicos de Guatemala</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Compras -->
+                <div class="tab-pane fade" id="compras" role="tabpanel">
+                    <div class="row g-4">
+                        <div class="col-lg-3 col-md-6">
+                            <div class="card h-100 shadow-sm">
+                                <div class="card-body text-center">
+                                    <div class="bg-danger text-white rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 80px; height: 80px;">
+                                        <i class="fas fa-shopping-bag fs-2"></i>
+                                    </div>
+                                    <h5 class="card-title text-danger">Mercado de Artesanías</h5>
+                                    <p class="card-text">Exploración y compras de productos locales</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="card h-100 shadow-sm">
+                                <div class="card-body text-center">
+                                    <div class="bg-danger text-white rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 80px; height: 80px;">
+                                        <i class="fas fa-tshirt fs-2"></i>
+                                    </div>
+                                    <h5 class="card-title text-danger">Textiles Guatemaltecos</h5>
+                                    <p class="card-text">Compras de artesanías y textiles únicos</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="card h-100 shadow-sm">
+                                <div class="card-body text-center">
+                                    <div class="bg-danger text-white rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 80px; height: 80px;">
+                                        <i class="fas fa-hammer fs-2"></i>
+                                    </div>
+                                    <h5 class="card-title text-danger">Talleres de Artesanos</h5>
+                                    <p class="card-text">Visita a talleres de artesanos locales</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="card h-100 shadow-sm">
+                                <div class="card-body text-center">
+                                    <div class="bg-danger text-white rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 80px; height: 80px;">
+                                        <i class="fas fa-store fs-2"></i>
+                                    </div>
+                                    <h5 class="card-title text-danger">Tiendas Locales</h5>
+                                    <p class="card-text">Productos únicos y recuerdos especiales</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modales para cada atracción -->
+    
+    <!-- Modal Arco de Santa Catalina -->
+    <div class="modal fade" id="arcoModal" tabindex="-1" aria-labelledby="arcoModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title" id="arcoModalLabel">
+                        <i class="fas fa-archway"></i>
+                        Arco de Santa Catalina
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                        <img src="images/Arco antigua.jpg" alt="Arco de Santa Catalina" class="img-fluid rounded">
+
+                        </div>
+                        <div class="col-md-6">
+                            <h6 class="text-primary">Historia</h6>
+                            <p>Construido en el siglo XVII, el Arco de Santa Catalina es uno de los símbolos más reconocidos de Antigua Guatemala.</p>
+                            
+                            <h6 class="text-primary">Características</h6>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-calendar text-warning"></i> <strong>Construido:</strong> Siglo XVII</li>
+                                <li><i class="fas fa-ruler text-warning"></i> <strong>Altura:</strong> 11 metros</li>
+                                <li><i class="fas fa-map-marker text-warning"></i> <strong>Ubicación:</strong> 1ra Calle Poniente</li>
+                            </ul>
+                            
+                            <h6 class="text-primary">Destacado</h6>
+                            <p>Su fachada amarilla distintiva y sus detalles barrocos la convierten en una de las iglesias más fotografiadas de Guatemala.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Parque Central -->
+    <div class="modal fade" id="parqueModal" tabindex="-1" aria-labelledby="parqueModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title" id="parqueModalLabel">
+                        <i class="fas fa-tree"></i>
+                        Parque Central
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="images/parquecentral.png" alt="Parque Central" class="img-fluid rounded">
+
+                        </div>
+                        <div class="col-md-6">
+                            <h6 class="text-primary">Corazón de la Ciudad</h6>
+                            <p>El Parque Central es el punto de encuentro principal y centro neurálgico de la vida social en Antigua Guatemala.</p>
+                            
+                            <h6 class="text-primary">Características</h6>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-fountain text-warning"></i> <strong>Fuente:</strong> Sirena Colonial</li>
+                                <li><i class="fas fa-tree text-warning"></i> <strong>Jardines:</strong> Áreas verdes</li>
+                                <li><i class="fas fa-building text-warning"></i> <strong>Rodeado por:</strong> Edificios coloniales</li>
+                            </ul>
+                            
+                            <h6 class="text-primary">Actividades</h6>
+                            <p>Lugar ideal para descansar, observar la vida local y disfrutar de la arquitectura colonial que lo rodea.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Volcán de Agua -->
+    <div class="modal fade" id="volcanModal" tabindex="-1" aria-labelledby="volcanModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title" id="volcanModalLabel">
+                        <i class="fas fa-mountain"></i>
+                        Volcán de Agua
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                        <img src="images/Volcan.jpg" alt="Volcán de Agua" class="img-fluid rounded">
+
+                        </div>
+                        <div class="col-md-6">
+                            <h6 class="text-primary">Majestuoso Guardián</h6>
+                            <p>El Volcán de Agua se alza majestuoso al sur de Antigua Guatemala, ofreciendo vistas espectaculares de la región.</p>
+                            
+                            <h6 class="text-primary">Datos Técnicos</h6>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-mountain text-warning"></i> <strong>Altura:</strong> 3,760 metros</li>
+                                <li><i class="fas fa-clock text-warning"></i> <strong>Ascenso:</strong> 6-8 horas</li>
+                                <li><i class="fas fa-thermometer text-warning"></i> <strong>Estado:</strong> Inactivo</li>
+                            </ul>
+                            
+                            <h6 class="text-primary">Senderismo</h6>
+                            <p>Popular destino para excursionistas que buscan una experiencia desafiante con recompensas visuales incomparables.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Formulario de Contacto -->
+<section class="container my-4">
+    <h3>Contáctanos</h3>
+    <form id="formContacto">
+        <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre</label>
+            <input type="text" id="nombre" class="form-control" required>
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">Correo</label>
+            <input type="email" id="email" class="form-control" required>
+        </div>
+        <div class="mb-3">
+            <label for="mensaje" class="form-label">Mensaje</label>
+            <textarea id="mensaje" class="form-control" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-success">Enviar</button>
+    </form>
+</section>
+<!-- Área de Comentarios -->
+<section class="container my-5">
+    <h3 class="mb-4">Opiniones de nuestros visitantes</h3>
+    <div id="comentarios-container" class="row g-3">
+        <!-- Aquí se insertarán las tarjetas dinámicamente -->
+    </div>
+</section>
+
+
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h5><i class="fas fa-mountain text-warning"></i> Antigua Guatemala Tours</h5>
+                    <p>Página desarrollada por: <strong>Francisco Alexander Chic Barrios</strong></p>
+                    <p>Carnet: <strong>9490-22-2513</strong></p>
+                    <p>Universidad Mariano Gálvez de Guatemala - 2025</p>
+                </div>
+                <div class="col-lg-6 text-lg-end">
+                    <h6>Síguenos</h6>
+                    <div class="d-flex justify-content-lg-end justify-content-center gap-3">
+                        <a href="#" class="text-light fs-4"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-light fs-4"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-light fs-4"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-3">
+            <div class="text-center">
+                <p class="mb-0">&copy; 2025 Excursión Antigua Guatemala. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Modal de Resultado -->
+<div class="modal fade" id="modalResultado" tabindex="-1" aria-labelledby="modalResultadoLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header bg-primary text-white">
+        <h5 class="modal-title" id="modalResultadoLabel">Datos del Formulario</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body" id="modalBody">
+        <!-- Aquí se insertará el contenido -->
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Scripts -->
+<script src="script.js"></script>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>> 
