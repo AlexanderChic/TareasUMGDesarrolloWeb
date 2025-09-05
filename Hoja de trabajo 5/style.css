@@ -1,0 +1,125 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+main {
+  flex: 1;
+}
+
+header {
+  background-color: #F6F1E9;
+  padding: 30px;
+  border-radius: 15px;
+}
+header h1 {
+  font-size: 60px;
+  font-family: "Roboto", sans-serif;
+  color: #000000;
+  margin-bottom: 40px;
+  text-align: center;
+}
+header nav {
+  width: 100%;
+  margin: 0 auto;
+}
+header nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+header nav ul li {
+  margin: 0;
+}
+header nav ul li a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 15px;
+  background: transparent;
+  border: 2px solid #4F200D;
+  border-radius: 20px;
+  color: #4F200D;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+  white-space: nowrap;
+  width: auto;
+  transition: all 0.25s ease;
+}
+header nav ul li a:visited {
+  color: #4F200D;
+}
+header nav ul li a:hover {
+  background: #FF9A00;
+  border-color: #FF9A00;
+  color: #F6F1E9;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+header nav ul li a:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+header nav ul li a:focus-visible {
+  outline: 3px solid rgba(79, 32, 13, 0.35);
+  outline-offset: 2px;
+}
+
+.content {
+  text-align: center;
+  padding: 60px 20px;
+}
+.content__title {
+  font-size: 2rem;
+  color: #4F200D;
+  margin-bottom: 20px;
+}
+.content__text {
+  font-size: 1.1rem;
+  color: #000000;
+  margin-bottom: 30px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.content__button {
+  padding: 12px 25px;
+  background-color: #FF9A00;
+  color: #F6F1E9;
+  font-weight: bold;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.content__button:hover {
+  background-color: rgb(204, 123.2, 0);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+.content__button:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+footer {
+  margin-top: auto;
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+/*# sourceMappingURL=style.css.map */

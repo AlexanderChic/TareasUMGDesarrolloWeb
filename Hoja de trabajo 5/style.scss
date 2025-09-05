@@ -1,0 +1,163 @@
+//* Definición de variables
+//! Colores pagina
+$color-primero: #F6F1E9;
+$color-segundo: #FFD93D;
+$color-tercero: #FF9A00;
+$color-cuarto: #4F200D;
+$color-letras: #000000;
+
+//! Fuentes
+$fuente-base: 'Roboto', sans-serif;
+$tamano-base: 16px;
+$tamano-titulos: 60px;
+
+//!Tamaños
+$margen-oficial: 40px;
+$padin-oficial: 30px;
+
+@mixin enlacesEstilo($color, $color-background) {
+    display: inline-flex; // evita ancho completo
+    justify-content: center;
+    align-items: center;
+    padding: 8px 15px;
+    background: transparent;
+    border: 2px solid $color-background;
+    border-radius: 20px;
+    color: $color;
+    font-weight: bold;
+    text-decoration: none; // sin subrayado
+    cursor: pointer;
+    white-space: nowrap; 
+    width: auto; 
+    transition: all 0.25s ease;
+
+    &:visited {
+        color: $color;
+    }
+
+   
+
+    &:hover {
+        background: $color-tercero; 
+        border-color: $color-tercero;
+        color: $color-primero; 
+        transform: translateY(-1px);
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+    }
+
+    &:active {
+        transform: translateY(0);
+        box-shadow: none;
+    }
+
+    &:focus-visible {
+        outline: 3px solid rgba(79, 32, 13, 0.35); 
+        outline-offset: 2px;
+    }
+}
+
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+main {
+    flex: 1;
+}
+
+header {
+    background-color: $color-primero;
+    padding: $padin-oficial;
+    border-radius: 15px;
+
+    h1 {
+        font-size: $tamano-titulos;
+        font-family: $fuente-base;
+        color: $color-letras;
+        margin-bottom: $margen-oficial;
+        text-align: center;
+    }
+
+    nav {
+        width: 100%; 
+        margin: 0 auto;
+
+        ul {
+            list-style: none;
+            display: flex; 
+            flex-wrap: wrap; 
+            gap: 14px; 
+            justify-content: center; 
+            padding: 0;
+            margin: 0;
+
+            li {
+                margin: 0; 
+
+                a {
+                  
+                    @include enlacesEstilo($color-cuarto, $color-cuarto);
+                }
+            }
+        }
+    }
+}
+.content {
+  text-align: center;
+  padding: 60px 20px;
+
+  &__title {
+    font-size: 2rem;
+    color: $color-cuarto; // café oscuro para contraste
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    font-size: 1.1rem;
+    color: $color-letras;
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__button {
+    padding: 12px 25px;
+    background-color: $color-tercero; // naranja
+    color: $color-primero;            // crema clarito
+    font-weight: bold;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: darken($color-tercero, 10%); // un poco más oscuro al hover
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    &:active {
+      transform: translateY(0);
+      box-shadow: none;
+    }
+  }
+}
+
+
+
+footer {
+    margin-top: auto; // empuja el footer al fondo
+    background: #222;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
