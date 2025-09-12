@@ -1,0 +1,272 @@
+@charset "UTF-8";
+/* ===== Variables de color (ajusta a tu paleta) ===== */
+/* ===== Utilidades ===== */
+.text-body {
+  color: #2c3e50 !important;
+}
+
+.text-body-emphasis {
+  color: rgb(22.2838709677, 31.4, 40.5161290323) !important;
+}
+
+.text-subtle {
+  color: #34495e !important;
+}
+
+.bg-surface {
+  background: #ffffff !important;
+}
+
+/* ===== Reset mínimo y base ===== */
+* {
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: #f0f4f8;
+  color: #2c3e50;
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+}
+
+.container {
+  width: min(1100px, 92%);
+  margin-inline: auto;
+  padding-bottom: 40px;
+}
+
+/* ===== Hero ===== */
+.hero {
+  text-align: center;
+  padding: 36px 16px 8px;
+  background: linear-gradient(180deg, #ffffff, rgba(255, 255, 255, 0.4));
+}
+.hero__title {
+  font-size: clamp(28px, 5vw, 40px);
+  margin: 0 0 4px;
+  color: #2c3e50;
+  text-shadow: 2px 2px 4px #cccccc;
+}
+.hero__subtitle {
+  margin: 0;
+  font-weight: 400;
+  color: #34495e;
+}
+
+/* Separador “bonito” */
+.section-title {
+  text-align: center;
+  font-size: clamp(24px, 4vw, 32px);
+  margin: 40px 0 20px;
+  position: relative;
+}
+.section-title::after {
+  content: "";
+  display: block;
+  width: 120px;
+  height: 4px;
+  background: #3498db;
+  margin: 12px auto 0;
+  border-radius: 999px;
+}
+
+/* ===== Nav ===== */
+.nav {
+  background: #3498db;
+  border-radius: 12px;
+  padding: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+}
+.nav__list {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 8px;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.nav__link {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  padding: 10px 14px;
+  border-radius: 999px;
+  transition: transform 0.15s ease, background 0.15s ease;
+}
+.nav__link:hover {
+  background: rgba(255, 255, 255, 0.12);
+  transform: translateY(-1px);
+}
+
+/* ===== Objetivo ===== */
+.objective {
+  margin-top: 28px;
+  background: #74b9ff;
+  color: #fff;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+}
+.objective__title {
+  text-align: center;
+  margin: 0 0 10px;
+  font-size: clamp(22px, 3.8vw, 28px);
+}
+.objective__text {
+  margin: 0;
+  font-size: 18px;
+  text-align: justify;
+}
+
+/* ===== Cursos ===== */
+.courses {
+  margin-top: 34px;
+}
+.courses__grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 18px;
+}
+
+/* Responsive grid: 2x2 en desktop, 1 por fila en móvil */
+@media (min-width: 900px) {
+  .courses__grid > * {
+    grid-column: span 6;
+  }
+}
+@media (max-width: 899px) {
+  .courses__grid > * {
+    grid-column: 1/-1;
+  }
+}
+/* ===== Card (por defecto: fondo blanco, texto oscuro) ===== */
+.card {
+  border-radius: 16px;
+  padding: 20px;
+  background: #ffffff;
+  color: #2c3e50;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+  border: 3px solid transparent;
+  display: grid;
+  align-content: start;
+  min-height: 220px;
+}
+.card__title {
+  margin: 4px 0 12px;
+  font-size: 24px;
+  color: #2c3e50;
+}
+.card__text {
+  margin: 0;
+  font-size: 16px;
+  text-align: justify;
+  line-height: 1.6;
+  color: #2c3e50;
+}
+.card__actions {
+  margin-top: 18px;
+}
+
+/* Variantes de card con fondo de color y texto blanco */
+.card--red {
+  background: #ff7675;
+  color: #fff;
+  border-color: #d63031;
+}
+
+.card--green {
+  background: #00b894;
+  color: #fff;
+  border-color: #00a085;
+}
+
+.card--violet {
+  background: #a29bfe;
+  color: #fff;
+  border-color: #6c5ce7;
+}
+
+.card--blue {
+  background: #74b9ff;
+  color: #fff;
+  border-color: #0984e3;
+}
+
+/* ===== Botón ===== */
+.btn {
+  display: inline-block;
+  background: #fff;
+  text-decoration: none;
+  font-weight: 800;
+  padding: 10px 18px;
+  border-radius: 999px;
+  border: 2px solid #fff;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, color 0.15s ease;
+}
+.btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+.btn--red {
+  color: #d63031;
+}
+.btn--green {
+  color: #00a085;
+}
+.btn--violet {
+  color: #6c5ce7;
+}
+.btn--blue {
+  color: #0984e3;
+}
+
+/* ===== Footer ===== */
+.footer {
+  margin-top: 40px;
+  background: #2c3e50;
+  padding: 24px;
+  border-radius: 16px;
+  color: #fff;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+}
+.footer__title {
+  margin: 0 0 12px;
+  font-size: 24px;
+  text-align: center;
+}
+
+.member {
+  background: #34495e;
+  border: 2px solid #4a6741;
+  border-radius: 10px;
+  padding: 16px;
+  width: min(680px, 100%);
+  margin: 0 auto;
+  text-align: center;
+}
+.member__name {
+  margin: 0 0 6px;
+  color: #ecf0f1;
+  font-size: 20px;
+}
+.member__meta {
+  margin: 0;
+  color: #bdc3c7;
+  font-size: 16px;
+}
+
+/* ===== Ajustes menores para tu h1 del ejemplo ===== */
+.titulo {
+  color: #0d6efd;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/*# sourceMappingURL=App.css.map */

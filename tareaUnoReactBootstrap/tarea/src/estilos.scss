@@ -1,0 +1,267 @@
+/* ===== Variables de color (ajusta a tu paleta) ===== */
+$bg-page: #f0f4f8;
+$bg-white: #ffffff;
+
+$text-main: #2c3e50;
+$text-sub: #34495e;
+$muted: #bdc3c7;
+
+$brand: #3498db;
+
+$red: #ff7675;
+$red-border: #d63031;
+
+$green: #00b894;
+$green-border: #00a085;
+
+$violet: #a29bfe;
+$violet-border: #6c5ce7;
+
+$blue: #74b9ff;
+$blue-border: #0984e3;
+
+$surface: #ffffff;
+$shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+$radius-lg: 16px;
+$radius-md: 12px;
+$radius-sm: 10px;
+
+/* ===== Utilidades ===== */
+.text-body { color: $text-main !important; }
+.text-body-emphasis { color: darken($text-main, 12%) !important; }
+.text-subtle { color: $text-sub !important; }
+.bg-surface { background: $surface !important; }
+
+/* ===== Reset mínimo y base ===== */
+* { box-sizing: border-box; }
+html, body, #root { height: 100%; }
+
+body {
+  margin: 0;
+  background: $bg-page;
+  color: $text-main;
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+}
+
+.container {
+  width: min(1100px, 92%);
+  margin-inline: auto;
+  padding-bottom: 40px;
+}
+
+/* ===== Hero ===== */
+.hero {
+  text-align: center;
+  padding: 36px 16px 8px;
+  background: linear-gradient(180deg, #ffffff, rgba(255, 255, 255, 0.4));
+
+  &__title {
+    font-size: clamp(28px, 5vw, 40px);
+    margin: 0 0 4px;
+    color: $text-main;
+    text-shadow: 2px 2px 4px #cccccc;
+  }
+
+  &__subtitle {
+    margin: 0;
+    font-weight: 400;
+    color: $text-sub;
+  }
+}
+
+/* Separador “bonito” */
+.section-title {
+  text-align: center;
+  font-size: clamp(24px, 4vw, 32px);
+  margin: 40px 0 20px;
+  position: relative;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 120px;
+    height: 4px;
+    background: $brand;
+    margin: 12px auto 0;
+    border-radius: 999px;
+  }
+}
+
+/* ===== Nav ===== */
+.nav {
+  background: $brand;
+  border-radius: $radius-md;
+  padding: 10px;
+  box-shadow: $shadow;
+
+  &__list {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 8px;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  &__item { }
+
+  &__link {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 10px 14px;
+    border-radius: 999px;
+    transition: transform .15s ease, background .15s ease;
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.12);
+      transform: translateY(-1px);
+    }
+  }
+}
+
+/* ===== Objetivo ===== */
+.objective {
+  margin-top: 28px;
+  background: $blue;
+  color: #fff;
+  border-radius: $radius-lg;
+  padding: 24px;
+  box-shadow: $shadow;
+
+  &__title {
+    text-align: center;
+    margin: 0 0 10px;
+    font-size: clamp(22px, 3.8vw, 28px);
+  }
+
+  &__text {
+    margin: 0;
+    font-size: 18px;
+    text-align: justify;
+  }
+}
+
+/* ===== Cursos ===== */
+.courses {
+  margin-top: 34px;
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 18px;
+  }
+}
+
+/* Responsive grid: 2x2 en desktop, 1 por fila en móvil */
+@media (min-width: 900px) {
+  .courses__grid > * { grid-column: span 6; }
+}
+@media (max-width: 899px) {
+  .courses__grid > * { grid-column: 1 / -1; }
+}
+
+/* ===== Card (por defecto: fondo blanco, texto oscuro) ===== */
+.card {
+  border-radius: $radius-lg;
+  padding: 20px;
+  background: $surface;
+  color: $text-main;
+  box-shadow: $shadow;
+  border: 3px solid transparent;
+  display: grid;
+  align-content: start;
+  min-height: 220px;
+
+  &__title {
+    margin: 4px 0 12px;
+    font-size: 24px;
+    color: $text-main;
+  }
+
+  &__text {
+    margin: 0;
+    font-size: 16px;
+    text-align: justify;
+    line-height: 1.6;
+    color: $text-main;
+  }
+
+  &__actions { margin-top: 18px; }
+}
+
+/* Variantes de card con fondo de color y texto blanco */
+.card--red   { background: $red;   color: #fff; border-color: $red-border; }
+.card--green { background: $green; color: #fff; border-color: $green-border; }
+.card--violet{ background: $violet;color: #fff; border-color: $violet-border; }
+.card--blue  { background: $blue;  color: #fff; border-color: $blue-border; }
+
+/* ===== Botón ===== */
+.btn {
+  display: inline-block;
+  background: #fff;
+  text-decoration: none;
+  font-weight: 800;
+  padding: 10px 18px;
+  border-radius: 999px;
+  border: 2px solid #fff;
+  transition: transform .15s ease, box-shadow .15s ease, color .15s ease;
+
+  &:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  }
+
+  &--red   { color: $red-border; }
+  &--green { color: $green-border; }
+  &--violet{ color: $violet-border; }
+  &--blue  { color: $blue-border; }
+}
+
+/* ===== Footer ===== */
+.footer {
+  margin-top: 40px;
+  background: #2c3e50;
+  padding: 24px;
+  border-radius: $radius-lg;
+  color: #fff;
+  box-shadow: $shadow;
+
+  &__title {
+    margin: 0 0 12px;
+    font-size: 24px;
+    text-align: center;
+  }
+}
+
+.member {
+  background: #34495e;
+  border: 2px solid #4a6741;
+  border-radius: $radius-sm;
+  padding: 16px;
+  width: min(680px, 100%);
+  margin: 0 auto;
+  text-align: center;
+
+  &__name {
+    margin: 0 0 6px;
+    color: #ecf0f1;
+    font-size: 20px;
+  }
+
+  &__meta {
+    margin: 0;
+    color: $muted;
+    font-size: 16px;
+  }
+}
+
+/* ===== Ajustes menores para tu h1 del ejemplo ===== */
+.titulo {
+  color: #0d6efd;
+  text-align: center;
+  margin-top: 20px;
+}
