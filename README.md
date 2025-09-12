@@ -19,6 +19,8 @@ Se realizo la tarea 1 con react y bootstrap
 
 ## 🔗 Enlaces Importantes
 - 🌐 **Tarea 1 - Deploy:** [https://tarea1alexanderchicumg.netlify.app/](https://tarea1alexanderchicumg.netlify.app/)
+- 🌐 **Tarea 1 - REACT AND BOOTSTRAP:** [https://tareaunoreactbootstrap.netlify.app/](https://tareaunoreactbootstrap.netlify.app/)
+
 
 - 📚 **Repositorio GitHub:** [https://github.com/AlexanderChic/TareasUMGDesarrolloWeb]
 
