@@ -39,7 +39,7 @@ export default function BasesDatos() {
           <div className="card shadow-sm rounded-4">
             <div className="card-body text-body bg-surface">
               <h3 className="h5 fw-bold text-body-emphasis">Proyecto / Evidencias</h3>
-              <p className="mb-0">Caso: sistema de clientes con consultas de reporte y KPIs básicos.</p>
+              <p className="mb-0">Caso: sistema de clientes con consultas de reporte y KPIs básicos.a</p>
             </div>
           </div>
         </div>
